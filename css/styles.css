@@ -1,0 +1,11 @@
+#image1{
+
+  background-image: url('../img/ragnarok2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#image2{
+  background-image: url('../img/ragnarok3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
