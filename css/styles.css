@@ -1,13 +1,24 @@
-#image1{
-
-  background-image: url('../img/ragnarok2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+@font-face {
+font-family: "norse";
+src: url("http://www.fontspace.com/joel-carrouche/norse"),
+src:url("css/fonts/Norse.otf") format("opentype");
 }
-#image2{
+
+#image1{
   background-image: url('../img/ragnarok3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+
+#image2{
+  background-image: url('../img/ragnarok2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1{
+  font-family: "Norse";
 
 }
