@@ -13,9 +13,8 @@ src:url("css/fonts/Norse.otf") format("opentype");
 
 #image2{
   background-image: url('../img/Pulsing_sound_waves.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  
+
 }
 
 h1{
