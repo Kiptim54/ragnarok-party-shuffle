@@ -27,9 +27,12 @@ padding-left:0;
 }
 
 #audio-btns{
-  font-size:900%;
+  font-size:800%;
   text-align: center;
   padding:2%;
+}
+#replay{
+  font-size:500%;
 }
 #pause{
   display:none;

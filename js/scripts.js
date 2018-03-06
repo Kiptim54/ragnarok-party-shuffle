@@ -2,15 +2,9 @@ $(document).ready(function(){
   /*hide the audio tag*/
   $("audio").hide();
   /*swtich between play and pause*/
-function details(){
-  var song=$("#playlist").attr('song');
-alert(song);}
-
     audioplayer();
     skip();
     replay();
-    details();
-
   $("#play").click(function(){
     $("#play").hide();
     $("#pause").show();
@@ -39,7 +33,6 @@ alert(song);}
     for(var i=0;i<this.length;i++);
     $("#skipforward").click(function(){
       $("#musicplayer")[0].src=$("#playlist li a")[i++];
-      $("#nowplaying").html(song);
       $("#musicplayer")[0].play();
       $("#pause").show();
     });
@@ -48,7 +41,7 @@ alert(song);}
       for(var i=0;i<this.length;i--);
       while(i=0){
       $("#musicplayer")[0].src=$("#playlist li a")[0];
-      $("audio").toggle("pause");
+      $("audio").trigger("pause");
       $("audio").trigger("play");
     };
       $("#skipbackward").click(function(){
