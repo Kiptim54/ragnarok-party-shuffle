@@ -12,7 +12,7 @@ src:url("css/fonts/Norse.otf") format("opentype");
 }
 
 #image2{
-  background-image: url('../img/ragnarok2.jpg');
+  background-image: url('../img/Pulsing_sound_waves.gif');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -20,5 +20,21 @@ src:url("css/fonts/Norse.otf") format("opentype");
 
 h1{
   font-family: "Norse";
+  color: white;
+}
+body{
+  color:white;
+}
 
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #6497b1;
+
+  color: white;
+
+  align: center;
 }
