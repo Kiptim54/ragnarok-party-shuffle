@@ -1,7 +1,6 @@
 @font-face {
-font-family: "norse";
-src: url("http://www.fontspace.com/joel-carrouche/norse"),
-src:url("css/fonts/Norse.otf") format("opentype");
+font-family: norse;
+src:url("font/Norse.otf") format("opentype");
 }
 
 #image1{
@@ -13,13 +12,13 @@ src:url("css/fonts/Norse.otf") format("opentype");
 
 #image2{
   background-image: url('../img/Pulsing_sound_waves.gif');
-  
-
 }
 
-h1{
-  font-family: "Norse";
+#headertext{
+  font-family: norse;
   color: white;
+  text-align: center;
+  font-size: 100px;
 }
 body{
   color:white;
