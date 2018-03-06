@@ -1,39 +1,49 @@
-.container-fluid{
-margin:0;
-padding:0;
-margin-left:0;
-margin:right:0;
-
-}
-  audio{
-  margin:20%;
-  width:400px;
-  color:red;
-
-
-}
-#playlist{
-  display:none;
-}
-#musicpage{
-background-position: center;
-background-size: cover;
-background-image: url("https://i.amz.mshcdn.com/BThoA7TaYIIkpgABSE7E61XkKAw=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F644482%2Fdef8e99e-f635-4aaf-b037-95d6baa2e85d.jpg");
-height:100vh;
-width:100vw;
-margin-left:0;
-margin-right:0;
-padding-left:0;
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+  margin: right:0;
 }
 
-#audio-btns{
-  font-size:800%;
+audio {
+  margin: 20%;
+  width: 400px;
+  color: red;
+}
+
+#playlist {
+  display: none;
+}
+
+#musicpage {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.amz.mshcdn.com/BThoA7TaYIIkpgABSE7E61XkKAw=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F644482%2Fdef8e99e-f635-4aaf-b037-95d6baa2e85d.jpg");
+  height: 100vh;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+#audio-btns {
+  font-size: 800%;
   text-align: center;
-  padding:2%;
+  padding: 2%;
 }
-#replay{
-  font-size:500%;
+
+#replay {
+  font-size: 500%;
 }
-#pause{
-  display:none;
+
+#pause {
+  display: none;
+}
+
+#particles-js {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  margin-left: -2;
+  margin-right: 0;
 }
