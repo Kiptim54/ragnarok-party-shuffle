@@ -1,9 +1,12 @@
 $(document).ready(function(){
   /*hide the audio tag*/
-  /*$("audio").hide();*/
+  $("audio").hide();
   /*swtich between play and pause*/
 
     audioplayer();
+    skip();
+    replay();
+
   $("#play").click(function(){
     $("#play").hide();
     $("#pause").show();
@@ -20,7 +23,6 @@ $(document).ready(function(){
     $("audio").trigger("pause");
   });
 
-skip();
 
   //Business Logic
   function audioplayer(){
@@ -30,11 +32,24 @@ skip();
     });
   };
   function skip(){
+    for(var i=0;i<this.length;i++);
     $("#skipforward").click(function(){
-      $("#musicplayer")[0].src=$("#playlist li a")["#playlist li a".length+1];
+      $("#musicplayer")[0].src=$("#playlist li a")[i++];
       $("#musicplayer")[0].play();
       $("#pause").show();
-
     });
   };
-});
+    function replay(){
+      for(var i=0;i<this.length;i--);
+      while(i=0){
+      $("#musicplayer")[0].src=$("#playlist li a")[0];
+      $("audio").toggle("pause");
+      $("audio").trigger("play");
+    };
+      $("#skipbackward").click(function(){
+        $("#musicplayer")[0].src=$("#playlist li a")[i--];
+        $("#musicplayer")[0].play();
+        $("#pause").show();
+      });
+      };
+    });
