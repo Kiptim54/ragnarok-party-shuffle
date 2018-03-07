@@ -2,9 +2,6 @@
   margin: 0;
   margin-left: 0;
   margin-right:0;
-  background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 audio {
@@ -22,6 +19,14 @@ audio {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
+  background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#morefacts{
+  height:400px;
+  background-color: grey;
 }
 
 #audio-btns {
