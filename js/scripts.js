@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(document).ready(function(){
   /*hide the audio tag*/
   $("audio").hide();
@@ -51,11 +51,6 @@ $(document).ready(function(){
         $("#pause").show();
       });
       };
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'js/package.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
     });
 
 //This will make text appear as a fade in.
