@@ -30,6 +30,7 @@ audio {
   font-size: 800%;
   text-align: center;
   padding: 2%;
+  position:absolute;
 }
 
 #replay {
