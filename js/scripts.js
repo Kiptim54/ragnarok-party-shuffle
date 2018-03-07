@@ -21,6 +21,34 @@ $(document).ready(function(){
     $("audio").trigger("pause");
   });
 
+//show funfact 1
+$("#fun1").click(function(){
+  $("#fun1").hide();
+  $("#funfact1").show();
+
+});
+//show funfact 2
+$("#fun2").click(function(){
+  $("#fun2").hide();
+  $("#funfact2").show();
+
+});
+//show funfact 3
+$("#fun3").click(function(){
+  $("#fun3").hide();
+  $("#funfact3").show();
+
+});
+$("#fun4").click(function(){
+  $("#fun4").hide();
+  $("#funfact4").show();
+
+});
+//add effect to funfact icons
+$("img").hover(function(){
+  $(this).removeClass()
+  $(this).addClass("animated tada");
+});
 
   //Business Logic
   function audioplayer(){
@@ -34,7 +62,6 @@ $(document).ready(function(){
     $("#skipforward").click(function(){
       $("#musicplayer")[0].src=$("#playlist li a")[i++];
       $("#musicplayer")[0].play();
-      $("#pause").show();
     });
   };
     function replay(){
