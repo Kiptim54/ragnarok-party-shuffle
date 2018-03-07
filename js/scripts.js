@@ -1,4 +1,12 @@
+//User Logic
+//==================================================================================================================
+//=======================AUDIO JS============================================================================
+
+
+
 $(document).ready(function(){
+  var song=$('song').val();
+  var artist=$('artist').val();
   /*hide the audio tag*/
   $("audio").hide();
   /*swtich between play and pause*/
@@ -20,7 +28,10 @@ $(document).ready(function(){
   $("#pause").click(function(){
     $("audio").trigger("pause");
   });
-
+  $("#play").click(function(){
+  $("#musicdetails").text("Now playing "+ song+"-");
+  });
+//===================ICONS JS==============================================================================
 //show funfact 1
 $("#fun1").click(function(){
   $("#funfact1").toggle();
@@ -47,6 +58,7 @@ $("img").hover(function(){
 });
 
   //Business Logic
+  //==========================================AUDIO JS======================================================================
   function audioplayer(){
     $("#musicplayer")[0].src=$("#playlist li a")[0];
     $("#playlist li a").click(function(event){
@@ -73,4 +85,5 @@ $("img").hover(function(){
         $("#pause").show();
       });
       };
+      //==========================================================================================================================
     });
