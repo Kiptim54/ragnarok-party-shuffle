@@ -16,8 +16,12 @@ src:url("font/Norse.otf") format("opentype");
   text-align: center;
   font-size: 100px;
 }
+style{
+  font-family: norse;
+}
 body{
-  color:white;
+  color:white
+
 }
 
 .footer{
