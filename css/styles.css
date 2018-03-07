@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -47,4 +48,42 @@ audio {
   width: 100vw;
   margin-left: -2;
   margin-right: 0;
+=======
+@font-face {
+font-family: norse;
+src:url("font/Norse.otf") format("opentype");
+}
+
+#image1{
+  background-image: url('../img/ragnarok3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#image2{
+  background-image: url('../img/Pulsing_sound_waves.gif');
+}
+
+#headertext{
+  font-family: norse;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
+body{
+  color:white;
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  color: white;
+
+ text-align: center;
+>>>>>>> ea19ef5dbfa962683421db4e832f735038c61a78
 }
