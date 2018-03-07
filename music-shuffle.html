@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/particles.js"></script>
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
   <title> Audio Player | Ragnarok </title>
@@ -19,6 +20,7 @@
       <!--Playbuttons Icon-------------------------------------------------->
       <h4>Random Music Generator</h4>
       <div class="col-md-12" id="musicpage">
+        <div id="particles-js">
 
         <div id="audio-btns">
           <i id="skipbackward" class="ion-skip-backward"></i>
@@ -30,14 +32,14 @@
         <div id="musicdetails"></div>
         <audio id="musicplayer" controls src=""></audio>
         <ul id="playlist">
-          <li> <a song="Follow you" href="music/Amon Amarth - Under the Northern Star (HD_HQ) - Lyric video-iIi6OcbdeTE.mp3" artist="heheh">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/Amon Amarth 'Twilight of the Thunder God'-JFYVcz7h3o0.mp3" artist="">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/Amon Amarth 'War of the Gods' (OFFICIAL)-FVAQQujgSxQ.mp3" artist="">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/ARCH ENEMY - War Eternal (OFFICIAL VIDEO)-InRMwptcgAo.mp3" artist="">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/Bullet For My Valentine - Tears Don't Fall-9sTQ0QdkN3Q.mp3" artist="">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/Gojira - Stranded [OFFICIAL VIDEO]-FNdC_3LR2AI.mp3" artist="">Follow you</a> </li>
-          <li> <a song="Follow you" href="" artist="music/needtobreathe_happiness_official_video_mp3_30640.mp3">Follow you</a> </li>
-          <li> <a song="Follow you" href="music/TÝR - Hold The Heathen Hammer High (Official)-fu2bgwcv43o.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/Amon Amarth - Under the Northern Star (HD_HQ) - Lyric video-iIi6OcbdeTE.mp3" artist="heheh">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/Amon Amarth 'Twilight of the Thunder God'-JFYVcz7h3o0.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/Amon Amarth 'War of the Gods' (OFFICIAL)-FVAQQujgSxQ.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/ARCH ENEMY - War Eternal (OFFICIAL VIDEO)-InRMwptcgAo.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/Bullet For My Valentine - Tears Don't Fall-9sTQ0QdkN3Q.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/Gojira - Stranded [OFFICIAL VIDEO]-FNdC_3LR2AI.mp3" artist="">Follow you</a> </li>
+          <li> <a value="Follow you" href="" artist="music/needtobreathe_happiness_official_video_mp3_30640.mp3">Follow you</a> </li>
+          <li> <a value="Follow you" href="music/TÝR - Hold The Heathen Hammer High (Official)-fu2bgwcv43o.mp3" artist="">Follow you</a> </li>
         </ul>
         <!--Fun Facts section--------------------------------------------->
         <img src="images/hand-axe-icon.png" id="fun1" class="animated slideInLeft" />
@@ -87,6 +89,7 @@
           <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/10897-200.png" id="seemore" class="animated "/>
       </div>
     </div>
+  </div>
     <div class="row">
       <div class="col-md-12" id="morefacts">
         <!--third fact-->
@@ -130,6 +133,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>

@@ -126,3 +126,11 @@ audio {
   top:2%;
   position:absolute;
 }
+#particles-js {
+  background-color: #002A3B;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+
+ }

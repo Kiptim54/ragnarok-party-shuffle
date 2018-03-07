@@ -5,8 +5,8 @@
 
 
 $(document).ready(function(){
-  var song=$('song').val();
-  var artist=$('artist').val();
+  var song=$("#playlist li a").val();
+  
   /*hide the audio tag*/
   $("audio").hide();
   /*swtich between play and pause*/
@@ -29,7 +29,7 @@ $(document).ready(function(){
     $("audio").trigger("pause");
   });
   $("#play").click(function(){
-  $("#musicdetails").text("Now playing "+ song+"-");
+  $("#musicdetails").text("Now playing "+ song);
   });
 //===================ICONS JS==============================================================================
 //show funfact 1
@@ -85,5 +85,8 @@ $("img").hover(function(){
         $("#pause").show();
       });
       };
+      particlesJS.load('particles-js', 'js/package.json', function() {
+ console.log('callback - particles.js config loaded');
+});
       //==========================================================================================================================
     });
