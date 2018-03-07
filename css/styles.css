@@ -2,6 +2,7 @@
   margin: 0;
   margin-left: 0;
   margin-right:0;
+  overflow-y: scroll;
 }
 
 audio {
@@ -25,8 +26,11 @@ audio {
 }
 
 #morefacts{
-  height:400px;
+  height:100vh;
   background-color: grey;
+  background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #audio-btns {
@@ -50,8 +54,8 @@ audio {
   color:white;
   width:200px;
   height:200px;
-  left:6%;
-  top:3%;
+  left:14%;
+  top:18%;
   position: absolute;
   display:none;
 
@@ -60,8 +64,8 @@ audio {
   color:white;
   width:200px;
   height:200px;
-  left:80%;
-  top:3%;
+  left:65%;
+  top:15%;
   position:absolute;
   display: none;
 }
@@ -69,8 +73,8 @@ audio {
   color:white;
   width:200px;
   height:200px;
-  left:6%;
-  bottom:8%;
+  left:12%;
+  top:2%;
   position:absolute;
   display: none;
 
@@ -80,8 +84,8 @@ audio {
   color:white;
   width:200px;
   height:200px;
-  left:80%;
-  bottom:8%;
+  left:65%;
+  top:2%;
   position:absolute;
   display: none;
 
@@ -104,11 +108,11 @@ audio {
 }
 #fun3{
     left:6%;
-    bottom:8%;
+    top:2%;
     position:absolute;
 }
 #fun4{
   left:80%;
-  bottom:8%;
+  top:2%;
   position:absolute;
 }

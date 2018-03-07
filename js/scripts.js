@@ -23,25 +23,21 @@ $(document).ready(function(){
 
 //show funfact 1
 $("#fun1").click(function(){
-  $("#fun1").hide();
-  $("#funfact1").show();
+  $("#funfact1").toggle();
 
 });
 //show funfact 2
 $("#fun2").click(function(){
-  $("#fun2").hide();
-  $("#funfact2").show();
+  $("#funfact2").toggle();
 
 });
 //show funfact 3
 $("#fun3").click(function(){
-  $("#fun3").hide();
-  $("#funfact3").show();
+  $("#funfact3").toggle();
 
 });
 $("#fun4").click(function(){
-  $("#fun4").hide();
-  $("#funfact4").show();
+  $("#funfact4").toggle();
 
 });
 //add effect to funfact icons
