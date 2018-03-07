@@ -48,7 +48,7 @@ audio {
   width: 100vw;
   margin-left: -2;
   margin-right: 0;
-=======
+
 @font-face {
 font-family: norse;
 src:url("font/Norse.otf") format("opentype");
@@ -81,9 +81,6 @@ body{
   bottom: 0;
   margin-left: 25%;
   margin-right: 25%;
-
   color: white;
-
  text-align: center;
->>>>>>> ea19ef5dbfa962683421db4e832f735038c61a78
 }
