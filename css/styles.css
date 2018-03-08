@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
   font-family: norse;
   src: url("font/Norse.otf") format("opentype");
@@ -87,5 +86,14 @@ audio {
 #pause {
   display: none;
 }
-=======
->>>>>>> 28a82e4866e82fb5a829177cdae62d5ec4795cc4
+.container {
+    text-align: center;
+}
+
+.flip-clock {
+    display: inline-block;
+    width: auto;
+}
+.btn{
+  border-color: red;
+}
