@@ -3,8 +3,7 @@
   src: url("font/Norse.otf") format("opentype");
 }
 
-#image1 {
-  background-image: url('../img/ragnarok1.jpg');
+#imagesSlider {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
