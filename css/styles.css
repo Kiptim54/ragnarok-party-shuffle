@@ -3,7 +3,8 @@
   src: url("font/Norse.otf") format("opentype");
 }
 
-#imagesSlider {
+#image1 {
+  background-image: url('../img/ragnarok1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -19,7 +20,7 @@
   display: none;
 }
 
-.textproperty {
+body {
   color: white;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -210,7 +211,4 @@ h4{
   padding-right: 0;
   margin-bottom: 0;
 
- }
- #text{
-   text-align: center;
  }
