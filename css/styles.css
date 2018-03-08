@@ -27,6 +27,7 @@ audio {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
+  padding-right:0;
   background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,10 +36,18 @@ audio {
   position: absolute;
   color:white;
   font-size:200%;
-  left:40%;
+  left:35%;
   top:60%;
   text-align: center;
-  font-style: italic;
+}
+h4{
+    position: absolute;
+    color:white;
+    font-size:200%;
+    left:37%;
+    top:10%;
+    text-align: center;
+    text-transform: uppercase;
 }
 #morefacts{
   height:100vh;
@@ -84,7 +93,7 @@ audio {
   width:200px;
   height:200px;
   left:12%;
-  top:2%;
+  top:10%;
   position:absolute;
   display: none;
 
@@ -118,7 +127,7 @@ audio {
 }
 #fun3{
     left:6%;
-    top:2%;
+    top:70%;
     position:absolute;
 }
 #fun4{

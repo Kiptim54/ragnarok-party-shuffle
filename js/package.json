@@ -20,8 +20,8 @@
         "nb_sides": 0
       },
       "image": {
-        "src": "img/github.svg",
-        "width": 100,
+        "src": "images",
+        "width": 1000,
         "height": 100
       }
     },
@@ -106,5 +106,5 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false
 }

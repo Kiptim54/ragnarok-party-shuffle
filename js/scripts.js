@@ -5,8 +5,8 @@
 
 
 $(document).ready(function(){
-  var song=$("#playlist li a").val();
-  
+  var song=$("#playlist li a").attr('value');
+
   /*hide the audio tag*/
   $("audio").hide();
   /*swtich between play and pause*/
@@ -28,9 +28,7 @@ $(document).ready(function(){
   $("#pause").click(function(){
     $("audio").trigger("pause");
   });
-  $("#play").click(function(){
-  $("#musicdetails").text("Now playing "+ song);
-  });
+
 //===================ICONS JS==============================================================================
 //show funfact 1
 $("#fun1").click(function(){
@@ -61,26 +59,34 @@ $("img").hover(function(){
   //==========================================AUDIO JS======================================================================
   function audioplayer(){
     $("#musicplayer")[0].src=$("#playlist li a")[0];
+    var song=$("#playlist li a").attr('value');
+      $("#musicdetails").html(song);
     $("#playlist li a").click(function(event){
       event.preventDefault();
     });
   };
   function skip(){
-    for(var i=0;i<this.length;i++);
+    for(var i=1;i<this.length;i++);
     $("#skipforward").click(function(){
-      $("#musicplayer")[0].src=$("#playlist li a")[i++];
+    var this1 = $("#musicplayer")[0].src=$("#playlist li a")[i++];
+      var song= $(this1).attr('value');
+        $("#musicdetails").html(song);
       $("#musicplayer")[0].play();
+
     });
   };
     function replay(){
       for(var i=0;i<this.length;i--);
-      while(i=0){
+      while((i=0) || (i=this.length)){
       $("#musicplayer")[0].src=$("#playlist li a")[0];
       $("audio").trigger("pause");
       $("audio").trigger("play");
+      $("audio").trigger("restart");
     };
       $("#skipbackward").click(function(){
-        $("#musicplayer")[0].src=$("#playlist li a")[i--];
+        var this2=$("#musicplayer")[0].src=$("#playlist li a")[i--];
+          var song= $(this2).attr('value');
+            $("#musicdetails").html(song);
         $("#musicplayer")[0].play();
         $("#pause").show();
       });
