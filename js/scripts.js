@@ -1,8 +1,4 @@
 //User Logic
-
-  $("#btn").click(function(){
-  $("music-shuffle.html").addclass("animated slideIn");
-  });
 //==================================================================================================================
 //This will make text appear as a fade in.
 var $el = $(".slideText1:first"), text = $el.text(),
@@ -50,6 +46,7 @@ $(this).delay(i*900).fadeIn(800);
 
 
 $(document).ready(function(){
+  $("#hidden").slideDown(2000);
   var song=$("#playlist li a").attr('value');
 
   /*hide the audio tag*/
@@ -58,6 +55,9 @@ $(document).ready(function(){
     audioplayer();
     skip();
     replay();
+    audioplayerogg();
+    skipogg();
+    replayogg();
   $("#play").click(function(){
     $("#play").hide();
     $("#pause").show();
@@ -72,6 +72,9 @@ $(document).ready(function(){
   });
   $("#pause").click(function(){
     $("audio").trigger("pause");
+  });
+  $("#seemore").click(function(){
+    scrollTo("#morefacts");
   });
 
 //===================ICONS JS==============================================================================
@@ -110,6 +113,14 @@ $("img").hover(function(){
       event.preventDefault();
     });
   };
+    function audioplayerogg(){
+      $("#musicplayerogg")[0].src=$("#playlistogg li a")[0];
+      var song=$("#playlistogg li a").attr('value');
+        $("#musicdetails").html(song);
+      $("#playlistogg li a").click(function(event){
+        event.preventDefault();
+      });
+    };
   function skip(){
     for(var i=1;i<this.length;i++);
     $("#skipforward").click(function(){
@@ -120,6 +131,16 @@ $("img").hover(function(){
 
     });
   };
+    function skipogg(){
+      for(var i=1;i<this.length;i++);
+      $("#skipforward").click(function(){
+      var this1 = $("#musicplayerogg")[0].src=$("#playlistogg li a")[i++];
+        var song= $(this1).attr('value');
+          $("#musicdetails").html(song);
+        $("#musicplayerogg")[0].play();
+
+      });
+    };
     function replay(){
       for(var i=0;i<this.length;i--);
       while((i=0) || (i=this.length)){
@@ -136,6 +157,22 @@ $("img").hover(function(){
         $("#pause").show();
       });
       };
+        function replayogg(){
+          for(var i=0;i<this.length;i--);
+          while((i=0) || (i=this.length)){
+          $("#musicplayerogg")[0].src=$("#playlistogg li a")[0];
+          $("audio").trigger("pause");
+          $("audio").trigger("play");
+          $("audio").trigger("restart");
+        };
+          $("#skipbackward").click(function(){
+            var this2=$("#musicplayerogg")[0].src=$("#playlistogg li a")[i--];
+              var song= $(this2).attr('value');
+                $("#musicdetails").html(song);
+            $("#musicplayerogg")[0].play();
+            $("#pause").show();
+          });
+          };
       particlesJS.load('particles-js', 'js/package.json', function() {
  console.log('callback - particles.js config loaded');
 });

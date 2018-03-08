@@ -16,6 +16,9 @@
   text-align: center;
   font-size: 100px;
 }
+#hidden{
+  display: none;
+}
 
 body {
   color: white;
@@ -52,9 +55,10 @@ body {
 audio {
   margin: 20%;
   width: 400px;
+  display: none;
 }
 
-#playlist {
+#playlist, #playlistogg {
   display: none;
 }
 #seemore{
@@ -76,9 +80,10 @@ audio {
   background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 #musicdetails{
-  position: absolute;
+  position: fixed;
   color:white;
   font-size:200%;
   left:35%;
@@ -103,6 +108,8 @@ h4{
   background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+
 }
 
 #audio-btns {
@@ -111,13 +118,23 @@ h4{
   left:40%;
   top:35%;
   color:white;
-  position:absolute;
+  position:fixed;
+
+
 }
 
 #pause {
   display: none;
 }
 
+#poem{
+    color:white;
+    left:35%;
+    top:10%;
+    position:absolute;
+    font-size:160%;
+    font-family:norse;
+}
 #funfact1{
   color:white;
   width:200px;
