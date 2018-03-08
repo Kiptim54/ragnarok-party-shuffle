@@ -1,6 +1,6 @@
 # Ragnarok-Party-Shuffle
-! [Ragnarok]  (images/Screenshot-2018-3-8 Audio Player Ragnarok.png)
-! [Ragnarok] (images/Screenshot-2018-3-8 Ragnarök Party Shuffle.jpg)
+![Ragnarok](images/Screenshot-2018-3-8 Audio Player Ragnarok.png)
+![Ragnarok](images/Screenshot-2018-3-8 Ragnarök Party Shuffle.jpg)
 
 ## Brief description of application
 This is a web app timer for Nordic end days that subsequently becomes a music shuffle player
