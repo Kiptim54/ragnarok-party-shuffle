@@ -73,9 +73,11 @@ $(document).ready(function(){
   $("#pause").click(function(){
     $("audio").trigger("pause");
   });
-  $("#seemore").click(function(){
-    scrollTo("#morefacts");
-  });
+  $("#seemore").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#morefacts").offset().top
+     }, 1500);
+ });
 
 //===================ICONS JS==============================================================================
 //show funfact 1

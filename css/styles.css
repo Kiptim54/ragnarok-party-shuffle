@@ -83,7 +83,7 @@ audio {
 
 }
 #musicdetails{
-  position: fixed;
+  position: absolute;
   color:white;
   font-size:200%;
   left:35%;
@@ -118,7 +118,7 @@ h4{
   left:40%;
   top:35%;
   color:white;
-  position:fixed;
+  position:absolute;
 
 
 }
