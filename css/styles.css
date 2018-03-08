@@ -10,16 +10,10 @@
   height: 100vh;
 }
 
-
-#headertext{
-image2 {
-  background-image: url('../img/Pulsing_sound_waves.gif');
-}
-
 #headertext {
-font-family: norse;
-color: white;
-text-align: center;
+  font-family: norse;
+  color: white;
+  text-align: center;
   font-size: 100px;
 }
 
@@ -28,7 +22,6 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: 20px;
-
 }
 
 .footer {
@@ -38,13 +31,13 @@ body {
   margin-left: 25%;
   margin-right: 25%;
   color: white;
- text-align: center;
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: 20px;
 }
-#btn{
+
+#btn {
   font-weight: bold;
   font-size: 20px;
   color: black;
@@ -84,7 +77,7 @@ audio {
   font-size: 800%;
   text-align: center;
   padding: 2%;
-  position:absolute;
+  position: absolute;
 }
 
 #replay {
