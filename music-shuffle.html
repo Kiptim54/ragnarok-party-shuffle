@@ -1,43 +1,160 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Death Party</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title> Audio Player | Ragnarok </title>
 </head>
 
 
 
-  <body id="image2">
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12" id="musicpage">
-      <div id="nowplaying"></div>
-      <div id="audio-btns">
-        <i id="skipbackward" class="ion-skip-backward"></i>
-        <i id="play" class="ion-play"></i>
-        <i id="pause" class="ion-pause"></i>
-        <i id="stop" class="ion-stops"></i>
-        <i id="skipforward" class="ion-skip-forward"></i>
-      </div>
 
-      <audio id="musicplayer" controls src=""></audio>
-      <ul id="playlist">
-        <li> <a song="Follow you" href="music/follow_you_mp3_935.mp3" artist="">Follow you</a> </li>
-        <li> <a song="Follow you" href="music/Lecrae - Broken ft_ Kari Jobe (Lyric Video) - 3Cr3tSWGHHc.m4a" artist="">Follow you</a> </li>
-        <li> <a song="Follow you" href="music/MADE A WAY - Travis Greene (Amazing worship__) - MDnrYaDPcig.m4a" artist="">Follow you</a> </li>
-      </ul>
+
+<body>
+  <div class="container-fluid" id="hidden">
+    <div class="row">
+      <!--Playbuttons Icon -->
+
+      <div class="col-md-12 col-xs-12 col-lg-12" id="musicpage">
+       <div class="content"
+        <div id="particles-js">
+          <h4 id="text">Valhalla Awaits Us</h4>
+          <div id="audio-btns">
+            <i id="skipbackward" class="ion-skip-backward"></i>
+            <i id="play" class="ion-play"></i>
+            <i id="pause" class="ion-pause"></i>
+            <i id="stop" class="ion-stops"></i>
+            <i id="skipforward" class="ion-skip-forward"></i>
+          </div>
+          <div id="musicdetails"></div>
+          <audio id="musicplayerogg" controls src="" type="audio/ogg"></audio>
+          <ul id="playlistogg">
+            <li> <a value="Amon Amarth--Under the Northern Star" href="music/mp3/Amon Amarth - Under the Northern Star (HD_HQ) - Lyric video-iIi6OcbdeTE.mp3" artist=""></a> </li>
+            <li> <a value="Amon Amarth--Twilight of the Thunder God" href="music/mp3/Amon Amarth 'Twilight of the Thunder God'-JFYVcz7h3o0.mp3" artist=""></a> </li>
+            <li> <a value="Amon Amarth -- War of the Gods" href="music/mp3/Amon Amarth 'War of the Gods' (OFFICIAL)-FVAQQujgSxQ.mp3" artist=""></a> </li>
+            <li> <a value="ARCH ENEMY -- War Eternal" href="music/mp3/ARCH ENEMY - War Eternal (OFFICIAL VIDEO)-InRMwptcgAo.mp3" artist=""></a> </li>
+            <li> <a value="Bullet For My Valentine--Tears Don't Fall" href="music/mp3/Bullet For My Valentine - Tears Don't Fall-9sTQ0QdkN3Q.mp3" artist=""></a> </li>
+            <li> <a value="Gojira -- Stranded" href="music/Gojira - Stranded [OFFICIAL VIDEO]-FNdC_3LR2AI.mp3" artist=""></a> </li>
+            <li> <a value="TÝR--Hold The Heathen Hammer High" href="music/mp3/TÝR - Hold The Heathen Hammer High (Official)-fu2bgwcv43o.mp3" artist=""></a> </li>
+          </ul>
+          <audio id="musicplayer" controls src="" type="mpeg"></audio>
+          <ul id="playlist">
+            <li> <a value="Amon Amarth--Under the Northern Star" href="music/ogg/Amon_Amarth_-_Under_the_Northern_Star_HD_HQ_-_Lyri.ogg" artist=""></a> </li>
+            <li> <a value="Amon Amarth--Twilight of the Thunder God" href="music/ogg/Amon_Amarth_Twilight_of_the_Thunder_God_-JFYVcz7h3.ogg" artist=""></a> </li>
+            <li> <a value="Amon Amarth -- War of the Gods" href="music/ogg/Amon_Amarth_War_of_the_Gods_OFFICIAL_-FVAQQujgSxQ.ogg" artist=""></a> </li>
+            <li> <a value="ARCH ENEMY -- War Eternal" href="music/ogg/ARCH_ENEMY_-_War_Eternal_OFFICIAL_VIDEO_-InRMwptcg.ogg" artist=""></a> </li>
+            <li> <a value="Bullet For My Valentine--Tears Don't Fall" href="music/ogg/Bullet_For_My_Valentine_-_Tears_Don_t_Fall-9sTQ0Qd.ogg" artist=""></a> </li>
+            <li> <a value="Gojira -- Stranded" href="" artist="music/ogg/Gojira_-_Stranded_OFFICIAL_VIDEO_-FNdC_3LR2AI.ogg"></a> </li>
+            <li> <a value="TÝR--Hold The Heathen Hammer High" href="music/ogg/T_R_-_Hold_The_Heathen_Hammer_High_Official_-fu2bg.ogg" artist=""></a> </li>
+          </ul>
+          <!--Fun Facts section-->
+          <img src="images/hand-axe-icon.png" id="fun1" class="animated slideInLeft" />
+          <section class="animated slideInUp" id="funfact1">
+            <h1>Weapons</h1>
+            <h2>Mjölnir</h2>
+            <p>The hammer of Thor,the god of thunder.It is one of the most fearsome and powerful weapons in existence, capable of leveling mountains.The hammer was made by the dwarven brothers Eitri and Brokkr.</p>
+            <h2>Gungnir</h2>
+            <p>Odin’s own spear. It hit whatever you threw it at. It didn’t matter how strong or how skilled you were, whatever you threw Gungnir at, you hit.</p>
+            <h2>Gram</h2>
+            <p>The sword used to slay Fafnir the dragon. It was a pretty powerful weapon.</p>
+
+            <h2>Dáinsleif</h2>
+            <p>This was king Högni's sword.It gave wounds that never healed and could not be unsheathed without killing a man.</p>
+          </section>
+          <!--second fact-->
+          <img src="images/helmet-icon0.png" id="fun2" class="animated slideInRight" />
+          <section class="animated slideInUp" id="funfact2">
+            <h1>Gods</h1>
+            <ul>
+              <li>Balder – Son of Odin and Frigg. Known as a gentle and wise god. Killed accidentally by his brother Hod. Will return after Ragnarok.</li>
+              <li>Bragi – The Norse God of poetry and eloquence. Son of Odin and husband of Idun.</li>
+              <li>Aegir – Norse God of the sea. Married to Ran and lives under the waves near the island of Hlesey.</li>
+              <li>Loki – The sly, trickster of the Norse gods. Son of two giants. Also known as the Sly One, the Trickster, the Shape Changer and the Sky Traveller. Becomes increasingly more evil. He is responsible for the death of Balder. Bound until Ragnarok.</li>
+              <li>Njord – A Vanir god associated with wind and sea. Husband of Skadi and father of Freyja and Freyr.</li>
+              <li>Odin – King of the Norse Gods, God of poetry, battle and death. Chief god of the Aesir. Also known as the “all-father”, the “terrible one”, “one-eyed” and “father of battle”.</li>
+              <!--<li>Thor – God of Sky, thunder and fertility. Associated with law and order in Asgard and guardian of the Norse gods. Son of Odin and Earth and husband of Sif. Also known as the “thunder god” and “charioteer”.</li>-->
+            </ul>
+
+          </section>
+          <img src="https://users.wpi.edu/~cbf/pics/Icons/dropArrow.png" id="seemore" class="animated tada infinite " />
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-xl-12" id="morefacts">
+        <!--third fact-->
+        <img src="images/zoo.png" id="fun3" />
+        <section class="animated slideInLeft" id="funfact3">
+          <h1>Monsters</h1>
+          <h2>Fenrir</h2>
+          <p>Fenrir is a giant wolf who lurked in the background of Norse culture, waiting for the day when he would be set free to devour as many of the Norse gods as possible.</p>
+
+          <h2>Huginn and Muninn</h2>
+          <p>Huginn and Muninn are a pair of ravens who are enlisted in Odin’s service. The birds depart every morning at dawn to fly around the Norse world, Midgard. At dinner, they return to their perches on Odin’s shoulders and tell him what they have
+            seen.
+          </p>
+
+          <h2>Valkyrie</h2>
+          <p>Mortal woman who has had magnificent powers bestowed on her by Odin. They are responsible for watching over battlefields and collecting the best of the best warriors to make up Odin’s army, which he will unleash during Ragnarok.</p>
+
+          <!--<h2>Jormungand</h2>
+            <p>In the depths of the ocean, a giant serpent named Jormungandr is biding his time. Prophecies tell us that he will emerge in Ragnarok to destroy the Nine Worlds of Norse mythology.</p>
+
+              <h2>Ymir</h2>
+            <p>He was first being. A giant created from drops of water that formed when the ice of Niflheim mixed with the heat of Muspelheim. Ymir was considered the father of all ice giants.</p>
+
+            <h2>Nidhogg</h2>
+            <p>Nidhogg is a ferocious dragon who gnaws at the roots of Yggdrasil, the tree which supports the nine worlds of Norse mythology. This power-hungry monster is sometimes referred to as “the Malice Striker,”He rules over dark criminals and is bent on destroying peace and virtue.</p>
+
+            <h2>Sleipnir</h2>
+            <p>Sleipnir is Odin’s valiant steed. He carries him on many quests, and he never fails to leave common men awestruck by his strength and speed.</p>
+
+            <h2>Ratatoskr</h2>
+            <p>Scurrying up and down the Norse tree of life is Ratatoskr, a squirrel with a taste for mischief. Ratatoskr may have big responsibilities as a messenger for the gods, but he doesn’t accept his duties meekly.</p>
+  -->
+
+        </section>
+        <div id="poem">
+        <p>
+          <blockquote>She there saw wading,the sluggish streams<br> bloodthirsty men and murderous wolfs<br> and those who confuse the ears of a female friend;<br> there suck Nidhoggr corpses, forward going,<br> the wolf tears beings.Understand ye yet, or what?<br>
+            <br> Trembles Yggdrasil's ash yet standing,<br> a feeble sound of aged tree,the Jotunn is loos;<br> hasty they all went on the road to Hel,<br> before still Surt's friend it swallow.<br>
+            <br> The sun darkens,earth in ocean sinks,<br> from heaven trembles bright stars.<br> The raging reek with age to linger<br> plays load heat with heaven itself.<br></blockquote>
+
+          --Völuspá (Prophecy of the Seeress)verses 39,47,57.</p>
+        </div>
+        <!--fourth fact-->
+        <img src="http://www.iconninja.com/files/322/549/280/female-viking-icon.png" id="fun4" />
+        <section class="animated slideInRight" id="funfact4">
+          <h1>Goddesses</h1>
+          <ul>
+            <li>Sif – Wife of Thor whose golden hair was cut off by Loki.</li>
+            <li>Skadi – Goddess of Winter and of the Hunt</li>
+            <li>Fjorgyn – Lover of Odin and mother of Thor. Also referred to as Earth.</li>
+            <li>Frigga – Main goddess. Wife of Odin and mother of Balder.</li>
+            <li>Freyja – Main goddess of the Vanir (fertility gods). Daughter of Njord and sister of Freyr.</li>
+            <li>Earth – Daughter of Night and Annar.</li>
+            <li>Einherjar – Band of dead warriors in Valhalla who await Ragnarok.</li>
+            <li>Eir – Goddess of healing</li>
+            <li>Fjorgyn – Lover of Odin and mother of Thor. Also referred to as Earth.</li>
+            <li>Forseti – God of Justice. Son of Balder and Nanna.</li>
+            <li>Freyja – Main goddess of the Vanir (fertility gods). Daughter of Njord and sister of Freyr.</li>
+            <li>Freyr – Important god of the Vanir. Son of Njord and brother of Freyja.</li>
+            <li>Frigga – Main goddess. Wife of Odin and mother of Balder.</li>
+            <li>Fulla – Goddess servant of Frigga.</li>
+            <li>Gangnrad – Pseudonym of Odin when he visits Vafthrudnir.</li>
+        </section>
+      </div>
     </div>
   </div>
-  </div>
-</div>
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/scripts.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
