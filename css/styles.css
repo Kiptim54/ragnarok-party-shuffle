@@ -217,3 +217,27 @@ h4{
    font-size: 12px;
    font-family: 'Cormorant Garamond', serif;
  }
+ #some_div {
+  font-size:80px;
+  font-family: norse;
+  font-weight: bold;
+  text-align: center;
+  color: #a70000;
+  border-color: black;
+}
+
+img#deadicon{
+  width: 90px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border-radius: 50px;
+
+}
+.middle{
+  text-align: center;
+  font-family:'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: bold;
+}

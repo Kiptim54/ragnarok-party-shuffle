@@ -196,3 +196,24 @@ $("img").hover(function(){
     }
 
     setInterval(carousel, 3000);
+
+
+
+    //timer
+    var timeLeft = 110;
+var elem = document.getElementById('some_div');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        doSomething();
+    } else {
+        elem.innerHTML = timeLeft + ' seconds to Ragnarök';
+        timeLeft--;
+    }
+}
+
+function doSomething() {
+
+}
