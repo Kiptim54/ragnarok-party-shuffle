@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   /*hide the audio tag*/
   $("audio").hide();
@@ -94,3 +93,17 @@ for (var i = 0; i < words.length; i++) {
 $el.html(html).children().hide().each(function(i){
  $(this).delay(i*900).fadeIn(800);
 });
+//carousel for the main page
+var imageSlider = document.getElementById('imagesSlider');
+
+var images =["url('../ragnarok-party-shuffle/img/ragnarok1.jpg')" , "url('../ragnarok-party-shuffle/img/ragnarok2.jpg')" , "url('../ragnarok-party-shuffle/img/ragnarok3.jpg')"];
+var counter = 0;
+
+function carousel(){
+ imageSlider.style.backgroundImage = images[counter];
+ counter++;
+ if(counter > 2 ){
+    counter = 0;
+ }
+}
+setInterval(carousel, 2000);
