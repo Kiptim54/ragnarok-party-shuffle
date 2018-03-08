@@ -1,37 +1,50 @@
 @font-face {
-font-family: norse;
-src:url("font/Norse.otf") format("opentype");
+  font-family: norse;
+  src: url("font/Norse.otf") format("opentype");
 }
 
-#image1{
+#image1 {
   background-image: url('../img/ragnarok3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-#image2{
+#image2 {
   background-image: url('../img/Pulsing_sound_waves.gif');
 }
 
-#headertext{
+#headertext {
   font-family: norse;
   color: white;
   text-align: center;
   font-size: 100px;
 }
-body{
-  color:white;
+
+body {
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  font-size: 20px;
+
 }
 
-.footer{
+.footer {
   position: absolute;
   left: 0;
   bottom: 0;
   margin-left: 25%;
   margin-right: 25%;
-
   color: white;
-
- text-align: center;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#btn{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  background-color: red;
+  border-color: red;
 }
