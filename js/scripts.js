@@ -1,3 +1,4 @@
+//This will make text appear as a fade in.
 var $el = $(".slideText1:first"), text = $el.text(),
    words = text.split(" ");
 
