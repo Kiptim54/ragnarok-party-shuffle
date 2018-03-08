@@ -1,4 +1,6 @@
 # Ragnarok-Party-Shuffle
+![Ragnarok](images/Screenshot-2018-3-8 Audio Player Ragnarok.png)
+[Ragnarok](images/Screenshot-2018-3-8 Ragnarök Party Shuffle.jpg)
 
 ## Brief description of application
 This is a web app timer for Nordic end days that subsequently becomes a music shuffle player
@@ -20,9 +22,9 @@ This is a web app dedicated to Ragnarok, a major event in Norse Mythology signif
 * Include the particle.js library by either:
   * Installing it via npm.
   * Include the cdn link to your html file.
-  *
+
 ### Technologies Used
-_HTML_,_CSS_,_BOOTSRAP_,_JAVASCRIPT_,JQUERY_,_PARTICLES.JS_
+_HTML_,_CSS_,_Bootstrap_,_Javascript_,Jquery_,_Particle.js_
 
 #### Support and contact details
 For any questions you can raise to the following emails:
@@ -33,7 +35,7 @@ For any questions you can raise to the following emails:
 * _cynthiataragon@gmail.com_
 
 #### Link to site
-[Ragnarok] party shuffle]()
+[Ragnarok Party shuffle]()
 
 #### License
 _MIT LICENSE_
