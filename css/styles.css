@@ -4,40 +4,30 @@
 }
 
 #image1 {
-  background-image: url('../img/ragnarok3.jpg');
+  background-image: url('../img/ragnarok1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-<<<<<<< HEAD
+
 #headertext{
-=======
-#image2 {
+image2 {
   background-image: url('../img/Pulsing_sound_waves.gif');
 }
 
 #headertext {
->>>>>>> 9db8535c694c31c07e2ba3271d79a4e671fbc382
-  font-family: norse;
-  color: white;
-  text-align: center;
+font-family: norse;
+color: white;
+text-align: center;
   font-size: 100px;
 }
-<<<<<<< HEAD
-style{
-  font-family: norse;
-}
-body{
-  color:white
-=======
 
 body {
   color: white;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: 20px;
->>>>>>> 9db8535c694c31c07e2ba3271d79a4e671fbc382
 
 }
 
@@ -48,9 +38,7 @@ body {
   margin-left: 25%;
   margin-right: 25%;
   color: white;
-<<<<<<< HEAD
  text-align: center;
-=======
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
@@ -62,7 +50,6 @@ body {
   color: black;
   background-color: red;
   border-color: red;
->>>>>>> 9db8535c694c31c07e2ba3271d79a4e671fbc382
 }
 
 .container-fluid {
@@ -107,10 +94,3 @@ audio {
 #pause {
   display: none;
 }
-
-#particles-js {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-  margin-left: -2;
-  margin-right: 0;
