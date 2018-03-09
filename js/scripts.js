@@ -195,7 +195,7 @@ $("img").hover(function(){
      }
     }
 
-    setInterval(carousel, 3000);
+    setInterval(carousel, 2000);
 
 
 
